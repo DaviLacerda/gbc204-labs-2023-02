@@ -9,7 +9,7 @@ window.onload = function init() {
         alert("WebGL isn't available");
     }
 
-    var vertices = new Float32Array([-0.5, -0.5, 0, 0.5, 0.5, -0.5]);
+    var vertices = new Float32Array([-0.5, -0.5, 0, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.3, -0.3, 0.5]);
 
     //  Configure WebGL
 
@@ -38,5 +38,5 @@ window.onload = function init() {
 
 function render() {
     gl.clear(gl.COLOR_BUFFER_BIT);
-    gl.drawArrays(gl.TRIANGLES, 0, 3);
+    gl.drawArrays(gl.TRIANGLES, 0, 6);
 }
