@@ -9,7 +9,9 @@ window.onload = function init() {
         alert("WebGL isn't available");
     }
 
-    var vertices = new Float32Array([-0.5, -0.5, 0, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.3, -0.3, 0.5]);
+    var vertices = new Float32Array([
+        -0.5, -0.5, 0, 0.5, 0.5, -0.5, -0.5, 0.2, 0.5, 0.2, 0, -0.8,
+    ]);
 
     //  Configure WebGL
 
